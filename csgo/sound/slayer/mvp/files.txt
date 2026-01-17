@@ -1,0 +1,3 @@
+Get-Clipboard |
+  ForEach-Object { ($_ -replace '.*\s+([^\s]+\.mp3)$','sound/slayer/mvp/$1').Trim() } |
+  Set-Content files.txt
